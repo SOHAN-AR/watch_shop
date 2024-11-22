@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    width: 100%;
+    padding: 15vh 0;
+}
+
+.spacer {
+    height: 15vh;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.get-in-touch {
+    position: relative; 
+    margin-bottom: 10vh;
+    background-image: url(../Pictures/test2.jpg);
+    background-size: cover;
+    height: 20vh;
+    width: 100%; 
+}
+
+.left-image {
+    position: absolute;
+    top: 0; 
+    bottom: 2vh;
+    left: 20vw;
+    height: 30vh; 
+    width: auto;
+}
+
+.content {
+    padding-left: 20%; 
+    text-align: center;
+    color: white;
+}
+
+.get-in-touch h2 {
+    padding-top: 6vh;
+    font-size: 36px;
+    color: #ddd;
+}
+
+.get-in-touch p {
+    color: #999;
+}
+
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-box-1 {
+    width: 45%;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.contact-box-1 h3 {
+    padding-bottom: 4vh;
+    font-size: 24px;
+    color: #ddd;
+}
+
+.contact-box-1 p {
+    color: #999;
+}
+
+.contact-box-2 {
+    width: 45%;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.contact-box-2 h3 {
+    padding-bottom: 1vh;
+    font-size: 24px;
+    color: #ddd;
+}
+
+.contact-box-2 p {
+    color: #999;
+}
+

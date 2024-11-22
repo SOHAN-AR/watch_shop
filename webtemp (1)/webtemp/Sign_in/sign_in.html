@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="sign_in.css">
+    <link rel="stylesheet" href="../Common/navbar.css">
+
+    <script src="sign_in.js" defer></script>
+    <script src="../Common/navbar.js" defer></script>
+
+    <title>Sign In</title>
+  </head>
+  <body>
+
+    <nav>
+        <a href="#" class = 'logo'>TWS</a>
+        <ul>
+          <li><a href="../Home/home.html">Home</a></li>
+          <li><a href="../tissot_video/test2.html">Products</a></li>
+          <li><a href="../Login/login.html">Login</a></li>
+          <li><a href="../About_us/about_us.html">About</a></li>
+          <li><a href="../Contact_us/contact_us.html">Contact Us</a></li>
+          <li><a href="../Checkout/checkout.html">Checkout</a></li>
+         
+        </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Sign In</h1>
+
+      <form id="signupForm">
+        <div class="form-control">
+          <input type="text" name="email" required>
+          <label>Enter Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="text" name="username" required>
+          <label>Create Username</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" name="password" required>
+          <label>Create Password</label>
+        </div>
+
+        <button class="btn">Sign in</button>
+
+        <div id="errorMessage" style="color: red;"></div>
+
+      </form>
+    
+    </div>
+
+  </body>
+</html>

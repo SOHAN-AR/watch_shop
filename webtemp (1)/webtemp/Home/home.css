@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Mont';
+    src: url('../.Fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont-Bold';
+    src: url('../.Fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+  
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+body, html {
+    background-color: black !important;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../Pictures/wp1.jpg);
+    background-size: cover;
+}
+
+.container1 {
+    padding-left: 7vw;  
+    display: flex;
+    width: 90vw;
+    max-width: 1340px;
+    margin-top: 15vh
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+.panel:nth-of-type(1) {
+    background-image: url('https://www.watches-news.com/wp-content/uploads/2022/12/patek-philippe-5990-watches-news.jpg');
+}
+
+.panel:nth-of-type(2) {
+    background-image: url('https://robbreport.com/wp-content/uploads/2023/11/17171118_Black_RGB_Landscape.jpg?w=1000');
+}
+
+.panel:nth-of-type(3) {
+    background-image: url('https://media.richardmille.com/wp-content/uploads/2020/02/19163209/richard-mille-rm-50-01-tourbillon-romain-grosjean-45524.jpg?dpr=1&width=2000');
+}
+
+.panel:nth-of-type(4) {
+    background-image: url('https://www.bobswatches.com/rolex-blog/wp-content/uploads/2017/01/Green-Gold-Rolex-GMT-Master.jpg');
+}
+
+.panel:nth-of-type(5) {
+    background-image: url('https://hodinkee.imgix.net/uploads/images/d7427720-88a8-40ac-88a8-a36e563c0f1a/RoyalOakOffshore26402CE.00.A002CA2.jpg?ixlib=rails-1.1.0&fm=jpg&q=55&auto=format&usm=12');
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

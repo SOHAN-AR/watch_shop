@@ -1,0 +1,235 @@
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 1s ease-in;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .navbar-nav .nav-item:hover {
+    border-bottom: 2px solid white;
+  }
+  .container{
+    animation: slideInFromTop 1s ease-in;
+  }
+  @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.carousel {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the video cover the entire container */
+}
+
+#home, #searchbar, #tws {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    top: 20px;
+}
+
+#home {
+    left: 40px;
+}
+
+#searchbar {
+    right: 40px;
+}
+
+#tws {
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 24px;
+    top: 50px;
+}
+
+#viewAllBtn {
+    position: absolute;
+    bottom: 60px; /* Adjusted the position slightly above */
+    left: 20px;
+    padding: 20px 30px; /* Increased padding for a bigger button */
+    background-color: black; /* Set background color to black */
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Added transition effect */
+}
+
+#viewAllBtn:hover {
+    background-color: #333; /* Darken the background color on hover */
+}
+
+#home a {
+    color: white;
+    text-decoration: none;
+}
+
+#home:hover, #searchbar:hover {
+    border-bottom: 2px solid white;
+}
+
+#textOverlay {
+    display: none; /* Hide the overlay */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.section-arrow {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.small-image {
+    width: 48%; /* Set width to 48% */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2%; /* Add a margin-right of 2% */
+}
+.image-container {
+position: relative;
+width: 100%; /* Adjust width as needed */
+height: auto;
+}
+
+.image-container img {
+width: 100%;
+height: auto;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+color: white; /* Text color for the overlay content */
+display: flex; /* Center content horizontally and vertically */
+justify-content: center;
+align-items: center;
+opacity: 0; /* Initially hide the overlay */
+transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.image-container:hover .overlay {
+opacity: 1; /* Show the overlay on hover */
+}
+
+.overlay h2,
+.overlay button {
+margin: 10px;
+}
+
+.overlay button {
+background-color: #4CAF50; /* Green button color */
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.overlay button:hover {
+background-color: #3e8e41; /* Darker green on hover */
+}
+.image-container img {
+width: 100%;
+height: 600px; /* Adjust the height value as per your requirement */
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.grid-3 {
+grid-template-columns: repeat(3, 1fr);
+}
+.py-5 {
+padding: 4rem 0;
+}
+.bg-dark,
+.btn-dark {
+background-color:rgb(255, 255, 255);
+color: #ffffff;
+}
+.footer .social a {
+margin: 0 10px;
+}
+.container1 a{
+text-decoration: none;
+}
+.container1 li{
+list-style-type: none;
+}
+.container1{
+max-width: 1100px;
+align-items: center;
+margin: 0 auto;
+overflow: auto;
+padding: 0 40px;
+}
+.container1 img{
+
+width: 200px;
+justify-self: flex-end;
+}
+.social a {
+  color: white;
+}
+.footer ul li a {
+  color: white;
+}
